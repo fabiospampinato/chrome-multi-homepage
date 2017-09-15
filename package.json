@@ -11,6 +11,12 @@
   },
   "license": "MIT",
   "author": "Fabio Spampinato",
+  "keywords": [
+    "chrome",
+    "extension",
+    "multi",
+    "homepage"
+  ],
   "dependencies": {
     "lodash": "^4.17.4",
     "pify": "^3.0.0",
