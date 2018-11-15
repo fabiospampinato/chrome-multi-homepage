@@ -19,13 +19,13 @@
     "homepage"
   ],
   "dependencies": {
+    "@types/chrome": "0.0.75",
     "lodash": "^4.17.4",
     "pify": "^3.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
-    "@types/chrome": "0.0.48",
     "awesome-typescript-loader": "^3.0.8",
     "chalk": "^2.1.0",
     "copy-webpack-plugin": "^4.0.1",
