@@ -5,7 +5,7 @@ Open multiple urls with a single click.
 ## Demo
 
 <p align="center">
-	<img src="resources/screenshots/options.png" width="750" alt="Options">
+  <img src="resources/screenshots/options.png" width="750" alt="Options">
 </p>
 
 ## License
