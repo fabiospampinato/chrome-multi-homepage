@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Multi Homepage",
   "description": "Open multiple URLs with a single click.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "action": {
     "default_title": "Multi Homepage",
     "default_icon": "./resources/icon/icon-256.png"
