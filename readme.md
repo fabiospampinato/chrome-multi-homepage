@@ -1,11 +1,11 @@
 # Multi Homepage ([DOWNLOAD](https://chrome.google.com/webstore/detail/multi-homepage/ndepbcaahckdllkanlbnpdlkofblebfn))
 
-Open multiple urls with a single click.
+Open multiple URLs with a single click.
 
 ## Demo
 
 <p align="center">
-  <img src="resources/screenshots/options.png" width="750" alt="Options">
+  <img src="resources/demo/options.png" width="1395" alt="Options">
 </p>
 
 ## License

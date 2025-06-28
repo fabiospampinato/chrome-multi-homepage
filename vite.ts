@@ -1,0 +1,37 @@
+
+/* IMPORT */
+
+import fs from 'node:fs/promises';
+import {defineConfig} from 'vite';
+import manifest from './manifest.json';
+
+/* MAIN */
+
+const config = defineConfig ({
+  mode: 'production',
+  build: {
+    minify: true,
+    rollupOptions: {
+      input: {
+        background: './src/background/worker.ts',
+        options: manifest.options_page,
+      },
+      output: {
+        entryFileNames: 'assets/[name].js'
+      }
+    }
+  },
+  plugins: [
+    {
+      name: 'copy:assets',
+      writeBundle: async () => {
+        await fs.cp ( 'resources/icon/icon-256.png', 'dist/resources/icon/icon-256.png', { recursive: true } );
+        await fs.cp ( 'manifest.json', 'dist/manifest.json' );
+      }
+    }
+  ]
+});
+
+/* EXPORT */
+
+export default config;
