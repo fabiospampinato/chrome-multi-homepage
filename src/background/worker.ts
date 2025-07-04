@@ -11,7 +11,10 @@ const worker = (): void => {
         .filter ( url => !url.startsWith ( '#' ) )
         .filter ( url => url.trim ().length )
         .map ( url => url.includes ( '://' ) ? url : `https://${url}` )
-        .forEach ( url => chrome.tabs.create ({ url }) );
+        .forEach ( ( url, index ) => {
+          const active = ( index === 0 );
+          chrome.tabs.create ({ active, url })
+        });
     });
   };
 
