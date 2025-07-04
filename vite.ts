@@ -7,10 +7,9 @@ import manifest from './manifest.json';
 
 /* MAIN */
 
-const config = defineConfig ({
-  mode: 'production',
+const config = defineConfig ( ({ mode }) => ({
   build: {
-    minify: true,
+    minify: mode === 'production',
     rollupOptions: {
       input: {
         background: './src/background/worker.ts',
@@ -30,7 +29,7 @@ const config = defineConfig ({
       }
     }
   ]
-});
+}));
 
 /* EXPORT */
 
